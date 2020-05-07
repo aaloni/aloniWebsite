@@ -13,7 +13,7 @@
 </head>
 <body>
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-md navbar-dark  bg-dark sticky-top">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 		<div class = "container-fluid">
 		<!--	<a class = "navbar-brand" href="#"><img src="img/logo_size2.jpg"></a>-->
 			<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,16 +22,16 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Home</a>
+					<a class="nav-link" href="index.html">Home</a>
 				</li>
 				<li class="nav-item ">
 					<a class="nav-link" href="#">About</a>
 				</li>
 				<li class="nav-item ">
-					<a class="nav-link" href="#">Portfolio</a>
+					<a class="nav-link" href="#PORTFOLIO">Portfolio</a>
 				</li>
 				<li class="nav-item ">
-					<a class="nav-link" href="#">Contact Me</a>
+					<a class="nav-link" href="Contact.html">Contact Me</a>
 				</li>
 			</ul>
 		</div>
@@ -39,14 +39,14 @@
 	</nav>
 
 	<hr class="my-4">
-<div class="container-fluid padding bg-dark">
+<div id="b1" class="container-fluid padding">
 	<div class="row padding justify-content-center align-items-center text-center">
 		<div class="col-lg-6">
-			<img src="img/PIC.jpg" class="rounded-circle img-fluid border border-dark" alt="Abdullah">
+			<img src="img/PIC.jpg" class="rounded-circle img-fluid" alt="Abdullah">
 		</div>
 		<div class="col-md-12 col-lg-6 ">
 			<h4 class="text-center">Hello! My name is Abdullah and I am a software developer. If you wish to know more about me....</h4>
-			<button type="button" class="btn btn-outline-light btn-lg font-weight-bold" name="button">Press here!</button>
+			<button type="button" class="btn btn-lg font-weight-bold" name="button">Press here!</button>
 </div>
 	</div>
 </div>
@@ -59,6 +59,56 @@
 </figure>
 <hr class="my-4">
 
+<div class="container-fluid bg-dark padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 id = "PORTFOLIO" class="display-4">PORTFOLIO</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="col-md-4">
+		<div class="card ">
+			<img class="card-img-top"src="img/team1.png" alt="Memory Game">
+			<div class="card-body">
+				<h4 class="card-title">Memory Game</h4>
+				<p class="card-text">2nd project of Udacity FEND nanodegree</p>
+				<a href="#" class="btn btn-outline-secondary">More Details!</a>
+
+			</div>
+		</div>
+
+	</div>
+	<div class="col-md-4">
+		<div class="card ">
+			<img class="card-img-top" src="img/team1.png" alt="Arcade Game">
+			<div class="card-body">
+				<h4 class="card-title">Arcade Game</h4>
+				<p class="card-text">3rd project of Udacity FEND nanodegree</p>
+				<a href="#" class="btn btn-outline-secondary">More Details!</a>
+
+			</div>
+		</div>
+
+	</div>
+	<div class="col-md-4">
+		<div class="card ">
+			<img class="card-img-top" src="img/team1.png"alt="Resturant Review">
+			<div class="card-body">
+				<h4 class="card-title">Resturant Review</h4>
+				<p class="card-text">4th project of Udacity FEND nanodegree</p>
+				<a href="#" class="btn btn-outline-secondary">More Details!</a>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+	</div>
+<!--
 <div class="container-fluid bg-dark padding">
 <div class="portfolio ">
 	<h2>PORTFOLIO</h2>
@@ -83,7 +133,7 @@
 
 	</div>
 </div>
-
+-->
 <!--- Image Slider
 <div id="slides" class="carousel slide" data-ride="carousel">
 	<ul class="carousel-indicators">
@@ -146,32 +196,39 @@
 
 
 <!--- Connect -->
+<div class="container-fluid padding">
+	<div class="row text-center Padding">
+		<div class="col-12">
+			<h2>Connect</h2>
+			<hr>
+		</div>
+		<div class="col-12 social padding">
+			<a href="https://www.facebook.com/aaaloni" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.linkedin.com/in/abdullah-aloni-almutai/"target="_blank"><i class="fab fa-linkedin"></i></a>
+					<a href="https://twitter.com/AAloni1987"target="_blank"><i class="fab fa-twitter"></i></a>
 
-
-<!--- Footer -->
-<hr class="my-4">
-<div class = "container bg-dark text-center " >
-
-<form name="contact" class="padding " method="POST" data-netlify="true">
-	<h1 class="padding">Contact Me</h1>
-  <p>
-
-		<input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name">
-
-  </p>
-  <p>
-    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
-  </p>
-
-  <p>
-
-<textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
-  </p>
-  <p>
-    <button type="submit"class="btn btn-lg btn-primary font-weight-bold">Send</button>
-  </p>
-</form>
+		</div>
 	</div>
+	<hr>
+
+</div>
+<hr >
+<!--- footer -->
+<footer>
+<div class="container-fluid bg-dark padding">
+	<div class="row text-center">
+		<div class="col-12">
+			<h8>&copy;Abdullah Almutatiri 2020 - Riyadh, Saudi Arabia </h8>
+
+
+
+		</div>
+
+	</div>
+
+</div>
+</footer>
+
 
 </body>
 </html>

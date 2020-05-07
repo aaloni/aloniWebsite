@@ -4,44 +4,31 @@ html, body{
   height: 100%;
   width: 100%;
   font-family: 'poppins',sans-serif;
-  color:#222;
+  color:grey;
+  text-shadow: 1px 1px 1px 10px grey;
  }
- .portfolio h2{
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 10px grey;
-  font-size: 350%;
 
- }
+
  .navbar{
    padding: .8rem;
  }
-
 .navbar-nav li{
-
   padding-right: 20px;
 }
 .nav-link{
   font-size: 1em !important;
 }
-
-.container-fluid  *
-{
-  color: white;
-}
-.col-md-12, .col-lg-6 h4 {
-  font-size: 120%;
-  text-shadow: 1px 1px 1px white;
-}
 .btn{
 /*#e50000-----#ff0000*/
-  background-color: inherit;
-  border: 1px solid white;
+background-color: white;
+border: 1px solid grey;
+  color: grey;
+
 }
 .btn:hover{
-  color:white;
-  background-color: green;
-  border: 1px solid white;
+  color: white;
+  border: 1px solid grey;
+  background-color: grey;
 }
 
 /*---Media Queries --*/
@@ -101,27 +88,46 @@ figure {
     padding: 1rem;
 }
 
-
-
 .container-fluid hr {
   border:.5px solid white;
   width: 40%;
 }
-.h1{
+
+.container-fluid h1{
+  color: white;
  text-align: center;
  text-transform: uppercase;
- text-shadow: 1px 1px 10px red;
- font-size: 650%;
+ font-size: 350%;
 
 }
+
 
 form{
-  text-transform: uppercase;
-  font-size: 400%;
+  text-transform:capitalize;
+  font-size: 350%;
   text-align: center;
-  font-family: 'poppins',sans-serif;
-  color:white;
+  transition:
 }
+.social a{
+  font-size: 3.4em;
+  padding: 3rem;
+}
+.fa-facebook{
+  color: #3b5998;
+}
+.fa-twitter{
+  color: #00aced;
+}
+.fa-linkedin{
+  color: #0e76a8;
+}
+
+footer{
+
+  width: 100%;
+  color: white;
+}
+
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
