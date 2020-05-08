@@ -94,19 +94,12 @@ li.fade {
 
 /*---Media Queries --*/
 
-
 @media only screen
-    and (device-width: 414px)
-    and (device-height: 896px)  {
-      .nav-links {
-        p
-        clip-path: circle(100px at 90% -40%);
-        -webkit-clip-path: circle(100px at 90% -40%);
-        transition: all 1s ease-out;
-      }
+    and (device-width: 1125px)
+    and (device-height: 2436px)  {
   .nav-links.open {
-    clip-path: circle(780px at 90% -20%);
-    -webkit-clip-path: circle(780px at 90% -20%);
+    clip-path: circle(2180px at 90% -20%);
+    -webkit-clip-path: circle(2180px at 90% -20%);
     pointer-events: all;
   }
 }
