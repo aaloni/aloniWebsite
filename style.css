@@ -96,7 +96,7 @@ li.fade {
 @media only screen and (width: 375px) and (width: 767px)
 and (-webkit-device-pixel-ratio: -2)  {
   .nav-links {
-    display:grid;
+    display:flex;
     padding: 5%;
     list-style: none;
     width: 50%;
