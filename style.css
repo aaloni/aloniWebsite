@@ -112,7 +112,11 @@ and (-webkit-device-pixel-ratio: 3)  {
     text-decoration: underline;
     text-decoration-style:wavy;
   }
-
+  .nav-links.open {
+    clip-path: circle(550px at 90% -10%);
+    -webkit-clip-path: circle(550px at 90% -10%);
+    pointer-events: all;
+  }
 
 }
 @media (max-width: 320px) {
