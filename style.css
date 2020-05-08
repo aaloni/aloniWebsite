@@ -95,6 +95,14 @@ li.fade {
 /*---Media Queries --*/
 @media only screen and (width: 375px) and (width: 767px)
 and (-webkit-device-pixel-ratio: -2)  {
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 10%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
   nav-links {
 
     clip-path: circle(100px at 90% -10%);
