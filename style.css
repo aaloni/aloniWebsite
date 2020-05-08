@@ -95,6 +95,12 @@ li.fade {
 /*---Media Queries --*/
 @media only screen and (width: 375px) and (width: 767px)
 and (-webkit-device-pixel-ratio: -2)  {
+  nav-links {
+
+    clip-path: circle(100px at 120% -10%);
+    -webkit-clip-path: circle(100px at 120% -10%);
+
+  }
   .nav-links.open {
     clip-path: circle(850px at 90% -10%);
     -webkit-clip-path: circle(850px at 90% -10%);
