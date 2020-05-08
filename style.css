@@ -5,25 +5,86 @@ html, body{
   width: 100%;
   font-family: 'poppins',sans-serif;
   color:grey;
-  text-shadow: 1px 1px 1px 10px grey;
- }
-
-
- .navbar{
-   padding: .8rem;
- }
-.navbar-nav li{
-  padding-right: 20px;
 }
-.nav-link{
-  font-size: 1em !important;
+.row{
+  width: 100%;
+}
+.col-md-6 img{
+  width: 75%;
+}
+nav {
+  height: 10vh;
+  position: relative;
+}
+.nav-links {
+  display: grid;
+  padding: 5%;
+  list-style: none;
+  width: 50%;
+  height: 100vh;
+  justify-content:space-around;
+  text-align: center;
+}
+.nav-links li a {
+  color: white;
+  font-size: 16px;
+}
+.nav-links  a:hover {
+  text-decoration: underline;
+  text-decoration-style:wavy;
+}
+.line {
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 5px;
+}
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  z-index: 2;
+}
+.nav-links {
+  position:relative;
+  background: #343a40;
+  height: 100vh;
+  width: 100%;
+  flex-direction:column;
+  clip-path: circle(100px at 90% -10%);
+  -webkit-clip-path: circle(100px at 90% -10%);
+  transition: all 1s ease-out;
+  pointer-events: none;
+}
+.nav-links.open {
+  clip-path: circle(1000px at 90% -10%);
+  -webkit-clip-path: circle(1000px at 90% -10%);
+  pointer-events: all;
+}
+.nav-links li {
+  opacity: 0;
+}
+.nav-links li a {
+  font-size: 25px;
+}
+.nav-links li:nth-child(1) {
+  transition: all 0.5s ease 0.2s;
+}
+.nav-links li:nth-child(2) {
+  transition: all 0.5s ease 0.4s;
+}
+.nav-links li:nth-child(3) {
+  transition: all 0.5s ease 0.6s;
+}
+li.fade {
+  opacity: 1;
 }
 .btn{
-/*#e50000-----#ff0000*/
-background-color: white;
-border: 1px solid grey;
+  background-color: white;
+  border: 1px solid grey;
   color: grey;
-
 }
 .btn:hover{
   color: white;
@@ -32,32 +93,42 @@ border: 1px solid grey;
 }
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
+@media (max-width: 320px) {
+  .nav-links.open {
+    clip-path: circle(550px at 90% -10%);
+    -webkit-clip-path: circle(550px at 90% -10%);
+    pointer-events: all;
   }
-@media (max-width: 768px) {
-
 }
-@media (max-width: 576px) {
-
+@media (min-width: 321px) and (max-width: 375px) {
+  .nav-links.open {
+    clip-path: circle(650px at 90% -10%);
+    -webkit-clip-path: circle(650px at 90% -10%);
+    pointer-events: all;
+  }
+}
+@media (min-width: 376px) and (max-width: 418px) {
+  .nav-links.open {
+    clip-path: circle(780px at 90% -10%);
+    -webkit-clip-path: circle(780px at 90% -10%);
+    pointer-events: all;
+  }
+}
+@media (min-width: 1000px)
+{
+  .nav-links.open {
+    clip-path: circle(1270px at 90% -10%);
+    -webkit-clip-path: circle(1270px at 90% -10%);
+    pointer-events: all;
+  }
 }
 
-/*---Firefox Bug Fix --
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-
-}
---- Fixed Background Image --*/
+/*--- Fixed Background Image --*/
 figure {
   position: relative;
   width: 100%;
   height:80%;
   margin: 0!important;
-
-
 }
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
@@ -69,7 +140,7 @@ figure {
 }
 #fixed {
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)),
-    url('img/pic11.jpg');
+  url('img/pic11.jpg');
   position: fixed;
   display:block;
   top: 0;
@@ -79,29 +150,23 @@ figure {
   background-size: cover;
   background-position: center center;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   will-change: transform;
-
 }
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
-    padding: 1rem;
+  padding: 1rem;
 }
-
 .container-fluid hr {
   border:.5px solid white;
   width: 40%;
 }
-
 .container-fluid h1{
   color: white;
- text-align: center;
- text-transform: uppercase;
- font-size: 350%;
-
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 350%;
 }
-
-
 form{
   text-transform:capitalize;
   font-size: 350%;
@@ -127,20 +192,3 @@ footer{
   width: 100%;
   color: white;
 }
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
