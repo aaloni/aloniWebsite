@@ -98,7 +98,7 @@ li.fade {
 @media only screen and (min-width: 375px) and (max-width: 767px)
 and (-webkit-device-pixel-ratio: 2)  {
 
-  .ul nav-links {
+  nav-links {
     display: none;
   }
 
