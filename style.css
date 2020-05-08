@@ -93,8 +93,8 @@ li.fade {
 }
 
 /*---Media Queries --*/
-@media only screen and (min-width: 375px) and (max-width: 767px)
-and (-webkit-device-pixel-ratio: 3)  {
+@media only screen and (width: 375px) and (width: 767px)
+and (-webkit-device-pixel-ratio: 1)  {
   .nav-links {
     display:grid;
     padding: 5%;
