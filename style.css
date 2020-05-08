@@ -113,8 +113,8 @@ and (-webkit-device-pixel-ratio: 3)  {
     text-decoration-style:wavy;
   }
   .nav-links.open {
-    clip-path: circle(650px at 90% -10%);
-    -webkit-clip-path: circle(650px at 90% -10%);
+    clip-path: circle(650px at 120% -10%);
+    -webkit-clip-path: circle(650px at 120% -10%);
     pointer-events: all;
   }
 
