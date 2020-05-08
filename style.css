@@ -100,8 +100,8 @@ li.fade {
 
   .nav-links.open {
 
-    clip-path: circle(950px at -90% 10%);
-    -webkit-clip-path: circle(950px at -90% 10%);
+    clip-path: circle(950px at 90% 100%);
+    -webkit-clip-path: circle(950px at 90% 100%);
     pointer-events: all;
   }
 }
