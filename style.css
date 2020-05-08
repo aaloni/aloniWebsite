@@ -100,7 +100,7 @@ and (-webkit-device-pixel-ratio: -2)  {
     padding: 5%;
     list-style: none;
     width: 50%;
-    height: 100vh;
+    height: 110vh;
     justify-content:space-around;
     text-align: center;
   }
