@@ -97,7 +97,7 @@ li.fade {
     and (device-width: 1125px)
     and (device-height: 2436px)  {
       .nav-links {
-
+height: 600vh;
         clip-path: circle(100px at 90% -10%);
         -webkit-clip-path: circle(100px at 90% -10%);
         transition: all 1s ease-out;
@@ -133,8 +133,8 @@ li.fade {
 @media (min-width: 1000px)
 {
   .nav-links.open {
-    clip-path: circle(1570px at 90% -10%);
-    -webkit-clip-path: circle(1570px at 90% -10%);
+    clip-path: circle(1270px at 90% -10%);
+    -webkit-clip-path: circle(1270px at 90% -10%);
     pointer-events: all;
   }
 }
