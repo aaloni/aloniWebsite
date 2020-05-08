@@ -93,9 +93,7 @@ li.fade {
 }
 
 /*---Media Queries --*/
-@media only screen
-    and (device-width: 1125px)
-    and (device-height: 2436px)  {
+@media only screen and (min-width: 375px) and (max-width: 767px)   {
       .nav-links {
 height: 600vh;
         clip-path: circle(100px at 90% -10%);
