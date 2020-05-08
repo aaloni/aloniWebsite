@@ -95,26 +95,9 @@ li.fade {
 /*---Media Queries --*/
 @media only screen and (width: 375px) and (width: 767px)
 and (-webkit-device-pixel-ratio: -2)  {
-  .nav-links {
-    display:flex;
-    padding: 5%;
-    list-style: none;
-    width: 50%;
-    height: 110vh;
-    justify-content:space-around;
-    text-align: center;
-  }
-  .nav-links li a {
-    color: white;
-    font-size: 16px;
-  }
-  .nav-links  a:hover {
-    text-decoration: underline;
-    text-decoration-style:wavy;
-  }
   .nav-links.open {
-    clip-path: circle(650px at 120% -10%);
-    -webkit-clip-path: circle(650px at 120% -10%);
+    clip-path: circle(850px at 90% -10%);
+    -webkit-clip-path: circle(850px at 90% -10%);
     pointer-events: all;
   }
 
