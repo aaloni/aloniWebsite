@@ -91,12 +91,14 @@ li.fade {
   border: 1px solid grey;
   background-color: grey;
 }
-
+.nav-links2 {
+  display: none;
+}
 /*---Media Queries --*/
 @media only screen and (min-width: 375px) and (max-width: 767px)
 and (-webkit-device-pixel-ratio: 2)  {
 
-  .nav-links {
+  .ul nav-links {
     display: none;
   }
 
