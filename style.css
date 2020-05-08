@@ -93,12 +93,14 @@ li.fade {
 }
 
 /*---Media Queries --*/
+
+
 @media only screen
-    and (device-width : 375px)
-    and (device-height : 812px)  {
+    and (device-width: 414px)
+    and (device-height: 896px)  {
   .nav-links.open {
-    clip-path: circle(850px at 90% -20%);
-    -webkit-clip-path: circle(850px at 90% -20%);
+    clip-path: circle(780px at 90% -20%);
+    -webkit-clip-path: circle(780px at 90% -20%);
     pointer-events: all;
   }
 }
@@ -109,10 +111,10 @@ li.fade {
     pointer-events: all;
   }
 }
-@media (min-width: 321px) and (max-width: 374px) {
+@media (min-width: 321px) and (max-width: 375px) {
   .nav-links.open {
-    clip-path: circle(650px at 90% -10%);
-    -webkit-clip-path: circle(650px at 90% -10%);
+    clip-path: circle(700px at 90% -10%);
+    -webkit-clip-path: circle(700px at 90% -10%);
     pointer-events: all;
   }
 }
