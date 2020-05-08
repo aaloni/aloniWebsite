@@ -95,13 +95,14 @@ li.fade {
 /*---Media Queries --*/
 @media only screen and (min-width: 375px) and (max-width: 767px)   {
   .nav-links {
-
+    clip-path: circle(100px at -90% 10%);
+    -webkit-clip-path: circle(100px at -90% 10%);
     height: 100vh;}
 
   .nav-links.open {
 
-    clip-path: circle(950px at 90% -100%);
-    -webkit-clip-path: circle(950px at 90% -100%);
+    clip-path: circle(950px at 90% -10%);
+    -webkit-clip-path: circle(950px at 90% -10%);
     pointer-events: all;
   }
 }
