@@ -16,15 +16,7 @@ nav {
   height: 10vh;
   position: relative;
 }
-.nav-links {
-  display: grid;
-  padding: 5%;
-  list-style: none;
-  width: 50%;
-  height: 100vh;
-  justify-content:space-around;
-  text-align: center;
-}
+
 .nav-links li a {
   color: white;
   font-size: 16px;
@@ -91,23 +83,12 @@ li.fade {
   border: 1px solid grey;
   background-color: grey;
 }
-nav-links2 {
-  display: none;
-}
+
 /*---Media Queries --*/
-@media only screen and (min-width: 375px) and (max-width: 767px)
+@media screen and (min-width: 375px) and (max-width: 767px)
 and (-webkit-device-pixel-ratio: 2)  {
 
-  nav-links {
-    display: none;
-  }
-
-  nav {
-
-    background: #5b78c7;
-  }
-
-  .nav-links2 {
+  .nav-links {
     display: flex;
     list-style: none;
     width: 50%;
@@ -117,14 +98,11 @@ and (-webkit-device-pixel-ratio: 2)  {
     margin-left: auto;
   }
 
-  .nav-links2 li a {
+  .nav-links li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
   }
-
-
-
 }
 @media (max-width: 320px) {
   .nav-links.open {
