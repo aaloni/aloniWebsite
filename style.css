@@ -95,7 +95,7 @@ li.fade {
   display: none;
 }
 /*---Media Queries --*/
-@media only screen and (width: 375px) and (width: 767px)
+@media only screen and (width: 375px) and (height: 812px)
 and (-webkit-device-pixel-ratio: 2)  {
 
   .nav-links {
