@@ -93,6 +93,15 @@ li.fade {
 }
 
 /*---Media Queries --*/
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)  {
+  .nav-links.open {
+    clip-path: circle(850px at 90% -20%);
+    -webkit-clip-path: circle(850px at 90% -20%);
+    pointer-events: all;
+  }
+}
 @media (max-width: 320px) {
   .nav-links.open {
     clip-path: circle(550px at 90% -10%);
@@ -100,7 +109,7 @@ li.fade {
     pointer-events: all;
   }
 }
-@media (min-width: 321px) and (max-width: 375px) {
+@media (min-width: 321px) and (max-width: 374px) {
   .nav-links.open {
     clip-path: circle(650px at 90% -10%);
     -webkit-clip-path: circle(650px at 90% -10%);
