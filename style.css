@@ -91,12 +91,22 @@ li.fade {
   border: 1px solid grey;
   background-color: grey;
 }
-
-/*---Media Queries --
+.nav-links2 {
+  display: none;
+}
+/*---Media Queries --*/
 @media only screen and (width: 375px) and (width: 767px)
 and (-webkit-device-pixel-ratio: 2)  {
 
-}*/
+  .nav-links {
+    display: none;
+  }
+  .nav-links {
+    display:run-in;
+  }
+
+
+}
 @media (max-width: 320px) {
   .nav-links.open {
     clip-path: circle(550px at 90% -10%);
