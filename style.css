@@ -91,19 +91,36 @@ li.fade {
   border: 1px solid grey;
   background-color: grey;
 }
-.nav-links2 {
-  display: none;
-}
+
 /*---Media Queries --*/
-@media only screen and (width: 375px) and (height: 812px)
+@media only screen and (min-width: 375px) and (max-width: 767px)
 and (-webkit-device-pixel-ratio: 2)  {
 
   .nav-links {
     display: none;
   }
-  .nav-links {
-    display:run-in;
+
+  nav {
+
+    background: #5b78c7;
   }
+
+  .nav-links2 {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .nav-links2 li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
 
 
 }
