@@ -107,11 +107,11 @@ li.fade {
 
       nav {
         height: 20vh;
-        position: fixed;
+        position: relative;
+        text-align: center;
       }
 
       .nav-links {
-        position: relative;
         height: 160vh;
         justify-content:center;
         align-items:center;
