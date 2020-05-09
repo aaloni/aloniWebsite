@@ -6,6 +6,7 @@ html, body{
   font-family: 'poppins',sans-serif;
   color:grey;
 }
+
 .row{
   width: 100%;
 }
@@ -15,6 +16,7 @@ html, body{
 nav {
   height: 10vh;
   position: relative;
+
 }
 
 .nav-links {
@@ -106,6 +108,7 @@ li.fade {
       nav {
         height: 10vh;
         position: relative;
+        padding: .8rem;
       }
 
       .nav-links {
