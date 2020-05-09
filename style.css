@@ -56,7 +56,7 @@ nav {
 }
 .hamburger {
   position: absolute;
-  cursor: pointer;
+  cursor:auto;
   right: 5%;
   top: 50%;
   transform: translate(-5%, -50%);
