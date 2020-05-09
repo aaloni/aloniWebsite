@@ -127,7 +127,7 @@ li.fade {
         height: 100%;
         justify-content:space-around;
         align-items: center;
-        margin-left: 16px;
+        margin: 16px;
       }
       .nav-links.open {
         clip-path: circle(900px at -90% -10%);
