@@ -118,13 +118,9 @@ li.fade {
     and (-webkit-device-pixel-ratio: 3) {
       nav {
         height: 15vh;
-        position: relative;
+        position: absolute;
       }
-        .nav-links.open {
-          clip-path: circle(1900px at -90% -10%);
-          -webkit-clip-path: circle(1900px at 90% -10%);
-          pointer-events: all;
-        }
+
      }
 
 /*--- Fixed Background Image --*/
