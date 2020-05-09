@@ -50,18 +50,16 @@ nav {
   z-index: 2;
 }
 .nav-links {
-  position:relative;
   background: #343a40;
   height: 100vh;
   width: 100%;
   flex-direction:column;
-  clip-path: circle(100px at 90% -10%);
+  clip-path: circle(100px at -90% -10%);
   -webkit-clip-path: circle(100px at 90% -10%);
   transition: all 1s ease-out;
-  pointer-events: none;
 }
 .nav-links.open {
-  clip-path: circle(1000px at 90% -10%);
+  clip-path: circle(1000px at -90% -10%);
   -webkit-clip-path: circle(1000px at 90% -10%);
   pointer-events: all;
 }
@@ -93,44 +91,11 @@ li.fade {
   border: 1px solid grey;
   background-color: grey;
 }
-
-/*---Media Queries --*/@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-
-    .nav-links.open {
-      clip-path: circle(850px at 90% -10%);
-      -webkit-clip-path: circle(850px at 90% -10%);
-      pointer-events: all;
-    }
-}
-@media (max-width: 320px) {
-  .nav-links.open {
-    clip-path: circle(550px at 90% -10%);
-    -webkit-clip-path: circle(550px at 90% -10%);
-    pointer-events: all;
-  }
-}
-@media (min-width: 321px) and (max-width: 375px) {
-  .nav-links.open {
-    clip-path: circle(700px at 90% -10%);
-    -webkit-clip-path: circle(700px at 90% -10%);
-    pointer-events: all;
-  }
-}
-@media (min-width: 376px) and (max-width: 418px) {
-  .nav-links.open {
-    clip-path: circle(780px at 90% -10%);
-    -webkit-clip-path: circle(780px at 90% -10%);
-    pointer-events: all;
-  }
-}
-@media (min-width: 1000px)
+@media (min-width: 768px)
 {
   .nav-links.open {
-    clip-path: circle(1270px at 90% -10%);
-    -webkit-clip-path: circle(1270px at 90% -10%);
+    clip-path: circle(1900px at 90% -10%);
+    -webkit-clip-path: circle(1900px at 90% -10%);
     pointer-events: all;
   }
 }
