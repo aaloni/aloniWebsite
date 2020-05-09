@@ -109,7 +109,8 @@ li.fade {
       .nav-links li a {
         color: white;
         font-size: 16px;
-        padding-top: 30px;
+        padding-top: 60px;
+        justify-content: space-around;
       }
 
       nav {
