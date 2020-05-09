@@ -111,7 +111,7 @@ li.fade {
       }
 
       .nav-links {
-
+        position: relative;
         height: 160vh;
         justify-content:center;
         align-items:center;
