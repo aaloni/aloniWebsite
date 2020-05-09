@@ -116,10 +116,6 @@ li.fade {
     and (device-height: 812px)
     and (-webkit-device-pixel-ratio: 3) {
 
-      nav {
-        height: 30vh;
-        position: relative;
-      }
 
       .nav-links {
         background: red;
@@ -127,8 +123,8 @@ li.fade {
 
       }
       .nav-links.open {
-        clip-path: circle(1900px at -90% -10%);
-        -webkit-clip-path: circle(1900px at 90% -10%);
+        clip-path: circle(900px at -90% -10%);
+        -webkit-clip-path: circle(900px at 90% -10%);
         pointer-events: all;
       }
      }
