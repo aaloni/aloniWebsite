@@ -107,7 +107,7 @@ li.fade {
 
       nav {
         height: 20vh;
-        position: relative;
+        position: fixed;
       }
 
       .nav-links {
