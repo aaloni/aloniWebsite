@@ -94,10 +94,16 @@ li.fade {
   background-color: grey;
 }
 
-/*---Media Queries --*/
-@media screen and (min-width: 375px) and (max-width: 767px)
-and (-webkit-device-pixel-ratio: 2)  {
+/*---Media Queries --*/@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
 
+    .nav-links.open {
+      clip-path: circle(850px at 90% -10%);
+      -webkit-clip-path: circle(850px at 90% -10%);
+      pointer-events: all;
+    }
 }
 @media (max-width: 320px) {
   .nav-links.open {
