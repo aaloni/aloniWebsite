@@ -122,7 +122,7 @@ li.fade {
       }
 
       .nav-links {
-        display: block;
+        display: inline-flex;
         list-style: none;
         width: 50%;
         height: 100%;
