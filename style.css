@@ -6,6 +6,19 @@ html, body{
   font-family: 'poppins',sans-serif;
   color:grey;
 }
+.bar2{
+  display: none;
+}
+ .navbar{
+
+   padding: .8rem;
+ }
+.navbar-nav li{
+  padding-right: 20px;
+}
+.nav-link{
+  font-size: 1em !important;
+}
 .row{
   width: 100%;
 }
@@ -103,20 +116,14 @@ li.fade {
     and (device-width: 375px)
     and (device-height: 812px)
     and (-webkit-device-pixel-ratio: 3) {
-      nav-links {
-        background: #343a40;
-        height: 120vh;
-        width: 100%;
-        flex-direction:column;
-        clip-path: circle(120px at -90% -10%);
-        -webkit-clip-path: circle(100px at 90% -10%);
-        transition: all 1s ease-out;
+      .bar2{
+        display: block;
       }
-      .nav-links.open {
-        clip-path: circle(850px at -90% -10%);
-        -webkit-clip-path: circle(850px at 90% -10%);
-        pointer-events: all;
+      .bar1{
+        display: none;
       }
+
+
      }
 
 /*--- Fixed Background Image --*/
