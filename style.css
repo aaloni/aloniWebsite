@@ -120,6 +120,11 @@ li.fade {
         height: 15vh;
         position: absolute;
       }
+      .nav-links.open {
+        clip-path: circle(900px at -90% -10%);
+        -webkit-clip-path: circle(900px at 90% 10%);
+        pointer-events: all;
+      }
 
      }
 
