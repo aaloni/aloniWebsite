@@ -116,18 +116,20 @@ li.fade {
     and (device-width: 375px)
     and (device-height: 812px)
     and (-webkit-device-pixel-ratio: 3) {
-      nav {
-        height: 15vh;
-        position: relative;
-      }
+
+
 
       .nav-links {
-        display: grid;
-        list-style: none;
+        background: #343a40;
+        display:flex;
+        height: 100vh;
         width: 100%;
-        height: 100%;
-        justify-content:center;
-        align-items: center;
+        flex-direction:row;
+        clip-path: circle(100px at -90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        justify-content:space-around;
+        align-items:center;
         margin-left: auto;
       }
       .nav-links.open {
