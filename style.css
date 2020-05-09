@@ -111,6 +111,7 @@ li.fade {
         font-size: 22px;
         padding: 60px;
         margin-top: 30px;
+        justify-content: space-between;
 
       }
 
