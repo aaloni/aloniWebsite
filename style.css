@@ -124,6 +124,7 @@ li.fade {
       .nav-links {
         background: red;
         height: 160vh;
+        justify-content: flex-start;
 
       }
       .nav-links.open {
