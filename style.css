@@ -108,17 +108,12 @@ li.fade {
         position: relative;
       }
 
-
-      .nav-links li a {
-        color: white;
-        font-size: 16px;
-      }
       .nav-links {
 
         height: 160vh;
-        justify-content:space-around flex-end;
+        justify-content:flex-end;
+        align-items:center;
         text-align:center;
-
 
 
       }
