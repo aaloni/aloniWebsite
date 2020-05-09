@@ -106,7 +106,7 @@ li.fade {
     and (-webkit-device-pixel-ratio: 3) {
 
 
-      .nav-links li  {
+      .nav-links li  a{
     padding-bottom: 5px;
         font-size: 22px;
         text-align: center;
