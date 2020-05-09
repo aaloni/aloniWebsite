@@ -116,7 +116,10 @@ li.fade {
     and (device-height: 812px)
     and (-webkit-device-pixel-ratio: 3) {
 
-
+      nav {
+        height: 10vh;
+        position: relative;
+      }
       .nav-links {
         background: red;
         height: 160vh;
