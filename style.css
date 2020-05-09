@@ -118,7 +118,7 @@ li.fade {
     and (-webkit-device-pixel-ratio: 3) {
       nav {
         height: 15vh;
-        position: absolute;
+        position: relative;
       }
 
       .nav-links {
