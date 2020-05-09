@@ -115,10 +115,17 @@ li.fade {
     and (device-width: 375px)
     and (device-height: 812px)
     and (-webkit-device-pixel-ratio: 3) {
-body{
-  background-color: red;
-}
 
+      nav {
+        height: 30vh;
+        position: relative;
+      }
+
+      .nav-links {
+        background: red;
+        height: 160vh;
+
+      }
      }
 
 /*--- Fixed Background Image --*/
