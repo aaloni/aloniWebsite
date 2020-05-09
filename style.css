@@ -124,8 +124,9 @@ li.fade {
       .nav-links {
         background: red;
         height: 160vh;
-        justify-content: flex-end;
+        justify-content:center;
         text-align: center;
+        padding: 10px;
 
       }
       .nav-links.open {
