@@ -1,8 +1,7 @@
 body {
-    text-align: center;
-    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
-
+  text-align: center;
+  background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
 }
 /*.coll {
-  display:inline-block;
+display:inline-block;
 }*/
