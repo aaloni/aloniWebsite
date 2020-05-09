@@ -94,11 +94,30 @@ li.fade {
 @media (min-width: 768px)
 {
   .nav-links.open {
-    clip-path: circle(1900px at 90% -10%);
+    clip-path: circle(1900px at -90% -10%);
     -webkit-clip-path: circle(1900px at 90% -10%);
     pointer-events: all;
   }
 }
+@media only screen
+    and (device-width: 375px)
+    and (device-height: 812px)
+    and (-webkit-device-pixel-ratio: 3) {
+      nav-links {
+        background: #343a40;
+        height: 120vh;
+        width: 100%;
+        flex-direction:column;
+        clip-path: circle(120px at -90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+      }
+      .nav-links.open {
+        clip-path: circle(850px at -90% -10%);
+        -webkit-clip-path: circle(850px at 90% -10%);
+        pointer-events: all;
+      }
+     }
 
 /*--- Fixed Background Image --*/
 figure {
