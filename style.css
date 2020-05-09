@@ -124,7 +124,7 @@ li.fade {
         display:flex;
         height: 100vh;
         width: 100%;
-        flex-direction:row;
+        flex-direction:column;
         clip-path: circle(100px at -90% -10%);
         -webkit-clip-path: circle(100px at 90% -10%);
         transition: all 1s ease-out;
@@ -133,8 +133,8 @@ li.fade {
         margin-left: auto;
       }
       .nav-links.open {
-        clip-path: circle(900px at -90% -10%);
-        -webkit-clip-path: circle(900px at 90% -10%);
+        clip-path: circle(1200px at -90% -10%);
+        -webkit-clip-path: circle(1200px at 90% -10%);
         pointer-events: all;
       }
 
