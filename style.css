@@ -117,24 +117,18 @@ li.fade {
     and (-webkit-device-pixel-ratio: 3) {
 
       nav {
-        height: 10vh;
+        height: 30vh;
         position: relative;
       }
+
       .nav-links {
         background: red;
         height: 160vh;
 
-        display: flex;
-        list-style: none;
-        width: 100%;
-        height: 100%;
-        justify-content:space-around;
-        align-items: center;
-        margin: auto;
       }
       .nav-links.open {
-        clip-path: circle(900px at -90% -10%);
-        -webkit-clip-path: circle(900px at 90% -10%);
+        clip-path: circle(1900px at -90% -10%);
+        -webkit-clip-path: circle(1900px at 90% -10%);
         pointer-events: all;
       }
      }
