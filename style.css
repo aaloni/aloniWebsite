@@ -112,13 +112,11 @@ li.fade {
       .nav-links li a {
         color: white;
         font-size: 16px;
-        margin: 700px;
       }
       .nav-links {
 
         height: 160vh;
-        justify-content:flex-end;
-        align-items:center;
+        justify-content:space-around flex-end;
         text-align:center;
 
 
