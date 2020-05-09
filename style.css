@@ -65,7 +65,6 @@ nav {
 .nav-links {
   background: #343a40;
   height: 100vh;
-  width: 100%;
   flex-direction:column;
   clip-path: circle(100px at -90% -10%);
   -webkit-clip-path: circle(100px at 90% -10%);
@@ -116,27 +115,9 @@ li.fade {
     and (device-width: 375px)
     and (device-height: 812px)
     and (-webkit-device-pixel-ratio: 3) {
-
-
-
-      .nav-links {
-        background: #343a40;
-        display:flex;
-        height: 100vh;
-        width: 100%;
-        flex-direction:column;
-        clip-path: circle(100px at -90% -10%);
-        -webkit-clip-path: circle(100px at 90% -10%);
-        transition: all 1s ease-out;
-        justify-content:space-around;
-        align-items:center;
-        margin-left: auto;
-      }
-      .nav-links.open {
-        clip-path: circle(1200px at -90% -10%);
-        -webkit-clip-path: circle(1200px at 90% -10%);
-        pointer-events: all;
-      }
+body{
+  background-color: red;
+}
 
      }
 
