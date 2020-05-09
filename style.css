@@ -108,8 +108,9 @@ li.fade {
 
       .nav-links li a {
         color: white;
-        font-size: 32px;
-        padding-top: 60px;
+        font-size: 22px;
+        padding: 60px;
+      
       }
 
       nav {
