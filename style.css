@@ -43,6 +43,7 @@ nav {
 .nav-links li a {
   color: white;
   font-size: 16px;
+  padding: 1rem;
 }
 .nav-links  a:hover {
   text-decoration: underline;
@@ -122,12 +123,12 @@ li.fade {
       }
 
       .nav-links {
-      
+
         height: 160vh;
         justify-content:flex-end;
         align-items:center;
-        text-align: center;
-        padding: 10px;
+        text-align:center;
+
 
       }
       .nav-links.open {
