@@ -122,7 +122,7 @@ li.fade {
       }
 
       .nav-links {
-        display: inline-flex;
+        display: flex;
         list-style: none;
         width: 50%;
         height: 100%;
@@ -132,7 +132,7 @@ li.fade {
       }
       .nav-links.open {
         clip-path: circle(900px at -90% -10%);
-        -webkit-clip-path: circle(900px at 90% 10%);
+        -webkit-clip-path: circle(900px at 90% -10%);
         pointer-events: all;
       }
 
