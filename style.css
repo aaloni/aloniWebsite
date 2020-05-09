@@ -116,13 +116,10 @@ li.fade {
     and (device-width: 375px)
     and (device-height: 812px)
     and (-webkit-device-pixel-ratio: 3) {
-      .bar2{
-        display: block;
+      nav {
+        height: 20vh;
+        position: relative;
       }
-      .bar1{
-        display: none;
-      }
-
 
      }
 
