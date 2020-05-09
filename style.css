@@ -125,7 +125,7 @@ li.fade {
         background: red;
         height: 160vh;
         justify-content:center;
-        align-items: center;
+        align-items:flex-end;
         text-align: center;
         padding: 10px;
 
