@@ -15,6 +15,9 @@ nav {
   height: 10vh;
   position: relative;
 }
+.navbar2 {
+  display: none;
+}
 /*Navigation features*/
 .nav-links {
   display: flex;
@@ -134,10 +137,40 @@ li.fade {
 and (device-width: 375px)
 and (device-height: 812px)
 and (-webkit-device-pixel-ratio: 3) {
-  .nav-links.open {
-    clip-path: circle(800px at 100% 50%);
-    -webkit-clip-path: circle(800px at 95% 5%);
+  .line {
+    display: none;
   }
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar2 {
+    display:flex;
+    flex-direction: row;
+    position:absolute;
+    top: 0;
+    width: 50%;
+  }
+
+  .navbar2 a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar2 a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+
 }
 
 /*--- Fixed Background --*/
