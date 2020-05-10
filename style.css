@@ -1,25 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
+/*Set the Heght,width, font, and text color*/
 html, body{
   height: 100%;
   width: 100%;
   font-family: 'poppins',sans-serif;
   color:grey;
 }
-
-.row{
-  width: 100%;
-}
-
+/*Image width*/
 .col-md-6 img{
   width: 75%;
 }
-
+/*Set the naigation bar height and position*/
 nav {
   height: 10vh;
   position: relative;
 }
-
+/*Navigation features*/
 .nav-links {
   display: flex;
   list-style: none;
@@ -29,50 +25,50 @@ nav {
   align-items: center;
   margin-left: auto;
 }
-
+/*Navigation Text size and color*/
 .nav-links li a {
   color: white;
   font-size: 16px;
 }
-
+/*Hover on links*/
 .nav-links  a:hover {
   text-decoration: underline;
   text-decoration-style:wavy;
 }
-
+/*Humberger lines features*/
 .line {
   width: 30px;
   height: 3px;
   background: white;
   margin: 5px;
 }
-
+/*Humberger position*/
 .hamburger {
   position: absolute;
   cursor:auto;
   right: 5%;
   top: 50%;
-  transform: translate(-5%, -50%);
+  transform: translate(0, -50%);
   z-index: 2;
 }
-
-.nav-links {
-  background: #343a40;
-  height: 100vh;
-  flex-direction:column;
-  clip-path: circle(100px at -90% -10%);
-  -webkit-clip-path: circle(100px at 90% -10%);
-  transition: all 1s ease-out;
-}
-
-.nav-links.open {
-  clip-path: circle(1000px at -90% -10%);
-  -webkit-clip-path: circle(1000px at 90% -10%);
-  pointer-events: all;
-}
-
+/* Navigation trnasition fetures and start position*/
+  .nav-links {
+    background: #343a40;
+    height: 100vh;
+    flex-direction:column;
+    clip-path: circle(20px at 70% 40%);
+    -webkit-clip-path: circle(20px at 95% 5%);
+    transition: all 1s ease-out;
+  }
+/* Navigation trnasition shape*/
+  .nav-links.open {
+    clip-path: circle(870px at 100% 50%);
+    -webkit-clip-path: circle(1100px at 95% 5%);
+    pointer-events: all;
+  }
+/* Navigation list motion*/
 .nav-links li {
-  opacity: 0;
+  opacity:0;
 }
 
 .nav-links li a {
@@ -91,28 +87,46 @@ nav {
   transition: all 0.5s ease 0.6s;
 }
 
+
+.nav-links li:nth-child(4) {
+  transition: all 0.5s ease 0.8s;
+}
+
 li.fade {
   opacity: 1;
 }
-
+/*button features*/
 .btn{
   background-color: white;
   border: 1px solid grey;
   color: grey;
 }
-
+/*Button hover features*/
 .btn:hover{
   color: white;
   border: 1px solid grey;
   background-color: grey;
 }
+/*Responsive screen media query*/
+@media (min-width: 360px){
+  .nav-links.open {
+    clip-path: circle(600px at 100% 50%);
+    -webkit-clip-path: circle(600px at 95% 5%);
+  }
+}
+
+@media (min-width: 411px){
+  .nav-links.open {
+    clip-path: circle(800px at 100% 50%);
+    -webkit-clip-path: circle(800px at 95% 5%);
+  }
+}
 
 @media (min-width: 768px)
 {
   .nav-links.open {
-    clip-path: circle(1900px at -90% -10%);
-    -webkit-clip-path: circle(1900px at 90% -10%);
-    pointer-events: all;
+    clip-path: circle(1300px at 100% 50%);
+    -webkit-clip-path: circle(1300px at 95% 5%);
   }
 }
 
@@ -120,36 +134,17 @@ li.fade {
 and (device-width: 375px)
 and (device-height: 812px)
 and (-webkit-device-pixel-ratio: 3) {
-  .nav-links li  a{
-    padding-bottom: 5px;
-    font-size: 22px;
-    text-align: center;
-  }
-
-  nav {
-    height: 20vh;
-    position: relative;
-  }
-
-  .nav-links {
-    height: 160vh;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-  }
-
   .nav-links.open {
-    clip-path: circle(1900px at -90% -10%);
-    -webkit-clip-path: circle(1900px at 90% -10%);
-    pointer-events: all;
+    clip-path: circle(800px at 100% 50%);
+    -webkit-clip-path: circle(800px at 95% 5%);
   }
 }
 
-/*--- Fixed Background Image --*/
+/*--- Fixed Background --*/
 figure {
   position: relative;
   width: 100%;
-  height:80%;
+  height:65%;
   margin: 0!important;
 }
 
@@ -161,7 +156,7 @@ figure {
   width: 100%;
   height: 100%;
 }
-
+/*--- Fixed Background Image--*/
 #fixed {
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)),
   url('img/pic11.jpg');
@@ -194,14 +189,14 @@ figure {
   text-transform: uppercase;
   font-size: 350%;
 }
-
+/*Contact form*/
 form{
   text-transform:capitalize;
   font-size: 350%;
   text-align: center;
   transition:
 }
-
+/*social media features*/
 .social a{
   font-size: 3.4em;
   padding: 3rem;
